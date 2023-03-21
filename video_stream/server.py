@@ -28,6 +28,7 @@ def handle_client(client_socket, client_address):
             if not data:
                 break
             client_socket.sendall(data)
+            print("Sending the packet.....")
             time.sleep(60)
             
 
